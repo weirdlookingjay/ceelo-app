@@ -1,0 +1,1 @@
+from ceelo.blueprints.page.views import page
