@@ -1,6 +1,8 @@
 FROM python:2.7-alpine
 LABEL maintainer="Joe clark"
 
+RUN apk update && apk add build-base postgresql-dev
+
 ENV INSTALL_PATH /ceelo
 RUN mkdir -p ${INSTALL_PATH}
 
